@@ -18,7 +18,7 @@ export const sessionSlice = createSlice({
   },
 });
 
-const selectSession = ({ session }: { session: SessionState }) => session;
+export const selectSession = ({ session }: { session: SessionState }) => session;
 
 export const selectDuration = createSelector(selectSession, ({ duration }) => {
   return duration;
