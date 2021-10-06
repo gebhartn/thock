@@ -1,7 +1,8 @@
 import { configureStore } from '@reduxjs/toolkit';
+
 import { preloadedState } from './preload';
-import session from './ducks/session.duck';
-import game from './ducks/game.duck';
+import session from './ducks/session';
+import game from './ducks/game';
 
 export const store = configureStore({
   reducer: {
