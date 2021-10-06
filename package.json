@@ -2,13 +2,17 @@
   "scripts": {
     "start": "snowpack dev",
     "build": "snowpack build",
-    "test": "web-test-runner \"src/**/*.test.tsx\"",
+    "test": "web-test-runner \"src/**/*.{test,spec}.{ts,tsx}\"",
     "format": "prettier --write \"src/**/*.{js,jsx,ts,tsx}\"",
     "lint": "prettier --check \"src/**/*.{js,jsx,ts,tsx}\""
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.6.2",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "react-redux": "^7.2.5",
+    "react-router-dom": "^5.3.0",
+    "styled-components": "^5.3.1"
   },
   "devDependencies": {
     "@snowpack/plugin-dotenv": "^2.1.0",
@@ -20,7 +24,9 @@
     "@types/mocha": "^8.2.2",
     "@types/react": "^17.0.4",
     "@types/react-dom": "^17.0.3",
+    "@types/react-router-dom": "^5.3.0",
     "@types/snowpack-env": "^2.3.3",
+    "@types/styled-components": "^5.1.14",
     "@web/test-runner": "^0.13.3",
     "chai": "^4.3.4",
     "prettier": "^2.2.1",
