@@ -7,7 +7,7 @@ export interface GameState {
   timer: number;
 }
 
-const initialState: GameState = {
+export const initialState: GameState = {
   words: [],
   start: false,
   complete: false,

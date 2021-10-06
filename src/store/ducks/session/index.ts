@@ -4,7 +4,7 @@ export interface SessionState {
   duration: number;
 }
 
-const initialState: SessionState = {
+export const initialState: SessionState = {
   duration: 0,
 };
 
