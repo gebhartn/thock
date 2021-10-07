@@ -1,4 +1,4 @@
-import type { GameState } from '../ducks/game.duck';
+import type { GameState } from '../ducks/game';
 
 const gameOptions = localStorage.getItem('thock-game-options');
 const savedState = gameOptions ? JSON.parse(gameOptions) : {};
