@@ -8,7 +8,7 @@ it('should apply a function', () => {
   expect(result).to.equal(4);
 });
 
-it('should compose multiple functions of single parity', () => {
+it('should compose multiple functions of single arity', () => {
   const addOne = (n: number) => n + 1;
   const double = (n: number) => n * 2;
   const fn = utils.compose(double, addOne);
