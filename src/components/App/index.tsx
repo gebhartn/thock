@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { toHumanTime } from '../../helpers';
 
+import { toHumanTime } from '../../helpers';
 import { useInterval } from '../../hooks';
 import { increment, selectDuration } from '../../store/ducks/session';
 
