@@ -4,7 +4,11 @@
     "build": "snowpack build",
     "test": "web-test-runner \"src/**/*.{test,spec}.{ts,tsx}\"",
     "format": "prettier --write \"src/**/*.{ts,tsx}\"",
-    "lint": "eslint --fix \"src/**/*.{ts,tsx}\""
+    "lint": "eslint --fix \"src/**/*.{ts,tsx}\"",
+    "clean:node": "rm -rf node_modules/",
+    "clean:build": "rm -rf build/",
+    "clean:all": "yarn clean:node && yarn clean:build",
+    "clean:install": "yarn clean:all && yarn install --frozen-lockfile"
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.2",
@@ -34,6 +38,7 @@
     "eslint": "^7.32.0",
     "eslint-plugin-react": "^7.26.1",
     "prettier": "^2.2.1",
+    "rimraf": "^3.0.2",
     "snowpack": "^3.3.7",
     "typescript": "^4.2.4"
   },
