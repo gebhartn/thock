@@ -40,7 +40,7 @@ export const gameSlice = createSlice({
   },
 });
 
-export const selectGame = ({ game }: { game: GameState }) => game;
+export const selectGame = ({ game }: { game: GameState }): GameState => game;
 
 export const selectTimer = createSelector(selectGame, ({ timer }) => timer);
 
